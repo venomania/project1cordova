@@ -1,0 +1,66 @@
+.hidden {
+    display: none;
+    margin-top: 2pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    animation-name: example;
+    animation-duration: 0.5s;
+
+  }
+.crumbs{
+    background: purple;
+    height: 4pc;
+    display: flex;
+}
+.logo{
+    height: 3pc;
+}
+.grille{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+}
+.one {
+    grid-column: 1 ;
+    grid-row: 1;
+  }
+.two {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+}
+.three  {
+    grid-column: 3 / 3;
+    grid-row: 1/2;
+}
+.btn-svg{
+    background-color: purple;
+    -webkit-mask-image: url(../img/add.svg);
+    mask-image: url(../img/add.svg);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+    position: fixed;
+    bottom: 1pc;
+    right: 1pc;
+}
+.ta{
+    height: 400px;
+    width: 270px;
+
+}
+
+.back-color{
+    background: purple;
+    color: white;
+}
+a:link {
+    text-decoration:none; 
+}
+
+@keyframes example {
+  from {margin:0;}
+}

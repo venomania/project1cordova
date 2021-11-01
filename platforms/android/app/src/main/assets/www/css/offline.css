@@ -1,0 +1,13 @@
+.aligne{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background: beige;
+    color: coral;
+}
+.ma-top{
+    margin-top: 10pc;
+   
+
+}
