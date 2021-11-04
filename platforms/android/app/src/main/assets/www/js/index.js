@@ -28,4 +28,18 @@ function onDeviceReady() {
     if (cordova.platformId == 'android') {
         StatusBar.backgroundColorByHexString("#800080");
     }
+    document.addEventListener("offline", onOffline, false);
+}
+
+
+function onOffline() {
+    navigator.notification.confirm(
+
+        'You are Offline!', // message
+      
+        'offline',           // title
+      
+        ['Exit']     // buttonLabels
+      
+      );
 }
